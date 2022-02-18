@@ -2,9 +2,9 @@
 
 Sistema de captura de foto e upload para um servidor SMB (compartilhamento Windows), permitindo o controle e registro de entrada/saída de objetos. A interface do aplicativo é otimizada para tela 3.5'' com touchscreen do Raspberry Pi. 
 
-O aplicativo permite que o usuário entre um número da pasta (número do caso, por exemplo) para upload das fotos (caso a pasta não exista no compartilhamento ela será criada, se a pasta já existir as fotos serão enviadas para dentro da pasta que existir). Nomes dos arquivos de imagem possuem o timestamp de captura.
+O aplicativo permite que o usuário entre um número da pasta (número do caso, por exemplo) para upload das fotos (caso a pasta não exista no compartilhamento ela será criada, se a pasta já existir as fotos serão enviadas para dentro da pasta que existir). Nomes dos arquivos de imagem possuem o timestamp da captura.
 
-FastPic foi desenvolvido em linguagem Python com bibliotecas GuiZero, Threading, SMBConnection e raspistill. As bibliotecas devem ser instaladas *antes* de executar o aplicativo.
+FastPic foi desenvolvido em linguagem Python com bibliotecas GuiZero (*pip3 install guizero*), Threading, SMBConnection (*pip3 install pysmb*) e raspistill. As bibliotecas devem ser instaladas *antes* de executar o aplicativo.
 
 ## Hardware recomendado
 
@@ -20,6 +20,7 @@ Edite o arquivo configServer.py com as credenciais e informações do servidor d
 
 ## Instrução de instalação
 1) Clonar o código do Git para o Raspbery Pi (i.e ***git clone https://github.com/matnunes/FastPic.git***)
-2) Colocar os arquivos da pasta FastPicApp dentro da pasta de sistema (ex: ***/home/pi***)
-3) Copiar o arquivo FastPic para o desktop do Raspberry Pi (ex: ***/home/pi/Desktop***)
-4) Executar o aplicativo FastPic na área de trabalho que irá executar o programa, por padrão, no seguinte diretório ***/home/pi/FastPicApp/FastPic.py***
+2) Colocar os arquivos da pasta FastPicApp dentro da pasta de sistema (ex: ***/home/pi***)   
+4) Copiar o arquivo FastPic para o desktop do Raspberry Pi (ex: ***/home/pi/Desktop***)
+   - Dar permissão de execução para o atalho (***chmod +x FastPic***)
+6) Executar o aplicativo FastPic na área de trabalho que irá executar o programa, por padrão, no seguinte diretório ***/home/pi/FastPicApp/FastPic.py***
