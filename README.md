@@ -6,7 +6,7 @@ O aplicativo permite que o usuário entre um número da pasta (número do caso, 
 
 FastPic foi desenvolvido em linguagem Python com bibliotecas GuiZero (*pip3 install guizero*), Threading, SMBConnection (*pip3 install pysmb*) e raspistill. As bibliotecas devem ser instaladas *antes* de executar o aplicativo.
 
-<img src="https://github.com/matnunes/FastPic/blob/main/UI.jpg?raw=true" width=60% >
+<img src="https://github.com/matnunes/FastPic/blob/main/UI.jpg?raw=true" height=350px ><img src="https://github.com/matnunes/FastPic/blob/main/apparatus.jpg?raw=true" height=350px>
 
 ## Hardware recomendado
 
