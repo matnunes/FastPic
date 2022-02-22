@@ -70,7 +70,7 @@ app = App("FastPic", layout="grid")
 
 lblCaso = Text(app, text="Digite o caso:", align="left", grid=[3, 0],font="Verdana",size=14,color="black")
 txtCaso = Text(app, text="", align="center", grid=[3, 1, 4, 1],font="Verdana",size=16,color="blue")
-camButton = PushButton(app, image="camera.png", width=140, height=90, command=cam_click, align="left", grid=[3, 2, 4, 3])
+camButton = PushButton(app, image="/home/pi/FastPicApp/camera.png", width=140, height=90, command=cam_click, align="left", grid=[3, 2, 4, 3])
 
 button1 = PushButton(app, text="1", grid=[0,0],width="6",height="2",command=button_click,args=["1"])
 button1.tk.config(font=("Verdana",13,"bold"))
